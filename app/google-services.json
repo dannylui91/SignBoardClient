@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "914373426797",
+    "firebase_url": "https://signboardclient.firebaseio.com",
+    "project_id": "signboardclient",
+    "storage_bucket": "signboardclient.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914373426797:android:300020167a1ecc6d",
+        "android_client_info": {
+          "package_name": "com.example.testing.signboardclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914373426797-g6v6716jnk5me0a4vftsdo0mvfslhong.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBbLBjne9ByukQGqa6HYR-tRSFMltpjQU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914373426797:android:6bc9e02bbf8b2080",
+        "android_client_info": {
+          "package_name": "things.wolfsoft.com.androidthings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914373426797-g6v6716jnk5me0a4vftsdo0mvfslhong.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBbLBjne9ByukQGqa6HYR-tRSFMltpjQU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
