@@ -1,8 +1,8 @@
 package com.example.testing.signboardclient.ui.mood;
 
-import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,7 +19,7 @@ import butterknife.ButterKnife;
  */
 
 public class MoodHolder extends RecyclerView.ViewHolder {
-    @BindView(R.id.civ_mood_color) TextView moodTv;
+    @BindView(R.id.civ_mood_color) ImageView moodTv;
     @BindView(R.id.tv_mood_text) TextView mootTextTv;
 
     private DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
@@ -30,15 +30,17 @@ public class MoodHolder extends RecyclerView.ViewHolder {
     }
 
     public void bind(final Mood mood) {
-        moodTv.setBackgroundColor(Color.parseColor(mood.getMoodColor()));
+        moodTv.setBackgroundResource(mood.getMoodImageId());
         mootTextTv.setText(mood.getMoodText());
 
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ref.child("mood").setValue(mood.getMoodText());
-                Toast.makeText(itemView.getContext(), mood.getMoodText(), Toast.LENGTH_SHORT).show();
+                ref.child("mood-color").setValue(mood.getMoodColor());
+                Toast.makeText(itemView.getContext(), mood.getMoodColor(), Toast.LENGTH_SHORT).show();
             }
         });
+
     }
+
 }

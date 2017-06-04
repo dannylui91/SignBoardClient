@@ -47,7 +47,7 @@ public class MoodFragment extends Fragment {
         moods.add(ANXIOUS);
         moods.add(CALM);
         moods.add(ANGER);
-        moods.add(JOY);
+//        moods.add(UNCOMFORTABLE);
         moods.add(IRRITATED);
         moods.add(SAD);
         moods.add(HAPPY);
