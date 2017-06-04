@@ -19,6 +19,8 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import static com.example.testing.signboardclient.utils.Constants.*;
+
 /**
  * Created by dannylui on 6/3/17.
  */
@@ -41,14 +43,13 @@ public class MoodFragment extends Fragment {
         recyclerView.setAdapter(new MoodAdapter());
 
         List<Mood> moods = new ArrayList<>();
-        moods.add(new Mood("Angry", "#113322"));
-        moods.add(new Mood("Angry", "#113322"));
-        moods.add(new Mood("Angry", "#113322"));
-        moods.add(new Mood("Angry", "#113322"));
-        moods.add(new Mood("Angry", "#113322"));
-        moods.add(new Mood("Angry", "#113322"));
-        moods.add(new Mood("Angry", "#113322"));
-        moods.add(new Mood("Angry", "#113322"));
+        moods.add(ANXIOUS);
+        moods.add(CALM);
+        moods.add(ANGER);
+        moods.add(JOY);
+        moods.add(IRRITATED);
+        moods.add(SAD);
+        moods.add(HAPPY);
 
         MoodAdapter adapter = (MoodAdapter) recyclerView.getAdapter();
         adapter.setData(moods);
