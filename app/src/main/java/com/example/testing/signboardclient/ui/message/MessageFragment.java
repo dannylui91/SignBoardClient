@@ -52,14 +52,14 @@ public class MessageFragment extends Fragment {
                 sendMessage();
             }
         });
-
     }
 
     private void sendMessage() {
         String message = messageEtv.getText().toString().trim();
+        Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
 
         if (TextUtils.isEmpty(message)) {
-            Toast.makeText(getActivity(), "Invalid Message", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), "Please enter a message", Toast.LENGTH_SHORT).show();
             return;
         }
 

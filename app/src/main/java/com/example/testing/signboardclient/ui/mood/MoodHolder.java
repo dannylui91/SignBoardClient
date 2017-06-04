@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.testing.signboardclient.R;
 import com.example.testing.signboardclient.model.Mood;
@@ -30,13 +31,13 @@ public class MoodHolder extends RecyclerView.ViewHolder {
 
     public void bind(final Mood mood) {
         moodTv.setBackgroundColor(Color.parseColor(mood.getMoodColor()));
-        moodTv.setText(String.valueOf(Character.toUpperCase(mood.getMoodText().charAt(0))));
         mootTextTv.setText(mood.getMoodText());
 
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ref.child("mood").setValue(mood.getMoodText());
+                Toast.makeText(itemView.getContext(), mood.getMoodText(), Toast.LENGTH_SHORT).show();
             }
         });
     }

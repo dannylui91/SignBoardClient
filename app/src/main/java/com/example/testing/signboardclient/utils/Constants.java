@@ -7,13 +7,14 @@ import com.example.testing.signboardclient.model.Mood;
  */
 
 public class Constants {
-    public static Mood ANXIOUS = new Mood("anxious", "#212121"); // BLACK
-    public static Mood ANGER = new Mood("anger", "#EF5350"); // RED
-    public static Mood CALM = new Mood("calm", "#9CCC65"); // GREEN
-    public static Mood JOY = new Mood("joy", "#FFEE58"); // YELLOW
-    public static Mood IRRITATED = new Mood("irritated", "#FFA726"); // ORANGE
-    public static Mood SAD = new Mood("sad", "#42A5F5"); // BLUE
-    public static Mood HAPPY = new Mood("happy", "#EC407A"); // PINK
+    public static Mood DEPRESSED = new Mood("Depressed", "#212121"); // BLACK
+    public static Mood ANXIOUS = new Mood("Anxious", "#6b6b6b"); // GRAY
+    public static Mood ANGER = new Mood("Anger", "#EF5350"); // RED
+    public static Mood CALM = new Mood("Calm", "#9CCC65"); // GREEN
+    public static Mood JOY = new Mood("Joy", "#fffbba"); // YELLOW
+    public static Mood IRRITATED = new Mood("Irritated", "#FFA726"); // ORANGE
+    public static Mood SAD = new Mood("Sad", "#42A5F5"); // BLUE
+    public static Mood HAPPY = new Mood("Happy", "#EC407A"); // PINK
 
 
 }

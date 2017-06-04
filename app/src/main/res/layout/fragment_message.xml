@@ -2,13 +2,25 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:orientation="vertical">
+              android:orientation="vertical"
+                android:padding="25dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your message:"
+        android:layout_above="@id/etv_message"
+        android:textSize="20dp"
+        />
 
     <EditText
         android:id="@+id/etv_message"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:hint="Enter text"
+        />
 
     <Button
         android:id="@+id/btn_send_message"

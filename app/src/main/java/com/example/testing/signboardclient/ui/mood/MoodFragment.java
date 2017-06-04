@@ -43,6 +43,7 @@ public class MoodFragment extends Fragment {
         recyclerView.setAdapter(new MoodAdapter());
 
         List<Mood> moods = new ArrayList<>();
+        moods.add(DEPRESSED);
         moods.add(ANXIOUS);
         moods.add(CALM);
         moods.add(ANGER);

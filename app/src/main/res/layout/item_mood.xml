@@ -6,7 +6,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#33AAAAAA">
+        android:background="#f9f9f9">
 
         <TextView
             android:id="@+id/civ_mood_color"
@@ -14,9 +14,7 @@
             android:layout_height="75dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
-            android:background="#FF3244"
             android:gravity="center"
-            android:text="H"
             android:textColor="@color/white"
             android:textSize="30sp"/>
 
@@ -26,9 +24,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/civ_mood_color"
             android:layout_centerInParent="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="5dp"
             android:text="hateful"
-            android:textSize="20sp"/>
+            android:textSize="25sp"/>
 
     </RelativeLayout>
 
