@@ -38,6 +38,8 @@ public class MoodHolder extends RecyclerView.ViewHolder {
             public void onClick(View view) {
                 ref.child("mood-color").setValue(mood.getMoodColor());
                 Toast.makeText(itemView.getContext(), mood.getMoodColor(), Toast.LENGTH_SHORT).show();
+
+                ref.child("message").setValue(mood.getMoodText().toUpperCase());
             }
         });
 
