@@ -18,4 +18,7 @@ public class Constants {
 //    public static Mood UNCOMFORTABLE = new Mood("Uncomfortable", "#EC407A"); // PINK
 
 
+    // Music
+    
+
 }
